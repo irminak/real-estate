@@ -13,6 +13,7 @@ export const DB = [
         bathrooms: 14,
         size: 'Approximately 50,000 square feet',
         amenities: ['Helipad', 'Olympic-sized swimming pool', 'Tennis courts'],
+        agentId: 1,
     },
     {
         id: 2,
@@ -32,6 +33,7 @@ export const DB = [
             '24-hour concierge',
             'Spa and fitness center',
         ],
+        agentId: 2,
     },
     {
         id: 3,
@@ -47,6 +49,7 @@ export const DB = [
         bathrooms: 14,
         size: 'Approximately 50,000 square feet',
         amenities: ['Helipad', 'Olympic-sized swimming pool', 'Tennis courts'],
+        agentId: 3,
     },
     {
         id: 4,
@@ -66,6 +69,7 @@ export const DB = [
             '24-hour concierge',
             'Spa and fitness center',
         ],
+        agentId: 4,
     },
     {
         id: 5,
@@ -81,6 +85,7 @@ export const DB = [
         bathrooms: 40,
         size: 'Approximately 50,000 square feet',
         amenities: ['Tennis court', 'Library', 'Gorgeous gardens'],
+        agentId: 5,
     },
     {
         id: 6,
@@ -96,6 +101,7 @@ export const DB = [
         bathrooms: 6,
         size: 'Approximately 11,000 square feet',
         amenities: ['Private elevator', 'Concierge services', 'Indoor pool'],
+        agentId: 4,
     },
     {
         id: 7,
@@ -111,6 +117,7 @@ export const DB = [
         bathrooms: 23,
         size: 'Approximately 28,660 square feet',
         amenities: ['Wine cellar', 'Home theater', 'Tropical gardens'],
+        agentId: 3,
     },
     {
         id: 8,
@@ -125,6 +132,7 @@ export const DB = [
         bathrooms: 23,
         size: 'Approximately 53,000 square feet',
         amenities: ['Entertainment complex', 'Basketball court', 'Vineyard'],
+        agentId: 1,
     },
     {
         id: 9,
@@ -140,6 +148,7 @@ export const DB = [
         bathrooms: 13,
         size: 'Approximately 23-acre property',
         amenities: ['Koi pond', 'Sport court', 'Gym'],
+        agentId: 5,
     },
     {
         id: 10,
@@ -158,5 +167,6 @@ export const DB = [
             'Private elevator',
             '24-hour security',
         ],
+        agentId: 2,
     },
 ];

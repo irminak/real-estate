@@ -3,18 +3,22 @@
 import { useRef, useState } from 'react';
 import { MdLocationPin } from 'react-icons/md';
 import CardModal from './CardModal';
+import { agents } from '../data/agents';
 
 const Card = ({ property, name, price, location, img }) => {
     const [selectedProperty, setSelectedProperty] = useState([]);
+    const [selectedAgent, setSelectedAgent] = useState([]);
     const modal = useRef();
 
     const handleOpenModal = (property) => {
         setSelectedProperty(property);
+        setSelectedAgent(
+            agents.filter((agent) => agent.id === property.agentId)
+        );
         modal.current.open();
     };
 
     let modalActions = <button>Close</button>;
-
     return (
         <>
             <CardModal
@@ -22,18 +26,21 @@ const Card = ({ property, name, price, location, img }) => {
                 title='Card'
                 actions={modalActions}
                 property={selectedProperty}
+                agent={selectedAgent}
             />
             <button
                 className='text-left'
                 onClick={() => handleOpenModal(property)}
             >
-                <div className='relative bg-white drop-shadow-md overflow-hidden rounded-2xl my-4 mr-8 '>
-                    <img
-                        src={img}
-                        className='h-[200px] w-[400px] obiect-cover'
-                    />
+                <div className='group relative bg-white drop-shadow-md overflow-hidden rounded-2xl my-4 mr-8 '>
+                    <div className='overflow-hidden'>
+                        <img
+                            src={img}
+                            className='group-hover:scale-110 transition-transform duration-300 h-[200px] w-[400px] object-cover '
+                        />
+                    </div>
                     <div className='p-5 border border-b'>
-                        <h1 className='py-2 truncate text-xl text-[#323E4C]'>
+                        <h1 className='py-2 truncate text-xl text-[#323E4C] '>
                             {name}
                         </h1>
                         <div className='flex items-center '>

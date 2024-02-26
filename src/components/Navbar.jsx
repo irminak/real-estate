@@ -65,7 +65,7 @@ const Navbar = () => {
                     <li className='p-4 pl-8 hover:bg-gray-100'>Services</li>
 
                     <div className='flex justify-center'>
-                        <button className='px-8 py-3 flex items-center rounded-md bg-[#323E4C] text-white font-bold'>
+                        <button className='px-8 py-3 flex items-center rounded-md bg-[#323E4C] hover:bg-red text-white font-bold'>
                             <FaPhone /> <span className='pl-2'>Call Us</span>
                         </button>
                     </div>

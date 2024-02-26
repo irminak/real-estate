@@ -1,4 +1,4 @@
-import { AboutUs, Header, Navbar, Properties } from './components';
+import { AboutUs, Header, Navbar, Properties, Agents } from './components';
 import './App.css';
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
             <Header />
             <Properties />
             <AboutUs />
+            <Agents />
         </div>
     );
 }

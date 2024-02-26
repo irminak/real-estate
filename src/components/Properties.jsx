@@ -1,5 +1,6 @@
 import Slider from 'react-slick';
 import { DB } from '../data/DB';
+
 import Card from './Card';
 
 const Properties = () => {
@@ -53,16 +54,18 @@ const Properties = () => {
                     {...settings}
                     className='py-10 '
                 >
-                    {DB.map((property) => (
-                        <Card
-                            key={property.id}
-                            name={property.name}
-                            price={property.price}
-                            location={property.city}
-                            img={`/pic${property.id}.jpg`}
-                            property={property}
-                        />
-                    ))}
+                    {DB.map((property) => {
+                        return (
+                            <Card
+                                key={property.id}
+                                name={property.name}
+                                price={property.price}
+                                location={property.city}
+                                img={`/pic${property.id}.jpg`}
+                                property={property}
+                            />
+                        );
+                    })}
                 </Slider>
             </div>
         </div>
