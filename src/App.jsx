@@ -1,4 +1,12 @@
-import { AboutUs, Header, Navbar, Properties, Agents } from './components';
+import {
+    AboutUs,
+    Header,
+    Navbar,
+    Properties,
+    Agents,
+    Mobile,
+    Footer,
+} from './components';
 import './App.css';
 
 export default function App() {
@@ -9,6 +17,8 @@ export default function App() {
             <Properties />
             <AboutUs />
             <Agents />
+            <Mobile />
+            <Footer />
         </div>
     );
 }

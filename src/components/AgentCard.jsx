@@ -4,7 +4,7 @@ const AgentCard = ({ photo, name, phone, email, note }) => {
     return (
         <div className='bg-white p-8 rounded-3xl shadow-xl my-8 mx-8'>
             <div className='flex justify-between'>
-                <div className='flex gap-4 items-center'>
+                <div className='flex gap-4 items-start sm:items-center flex-col sm:flex-row '>
                     <img
                         className='w-30 rounded-full'
                         src={photo}
@@ -18,13 +18,13 @@ const AgentCard = ({ photo, name, phone, email, note }) => {
                     </div>
                 </div>
                 <img
-                    className='h-20'
+                    className='h-0 sm:h-20'
                     src='/medal.svg'
                 />
             </div>
 
             <div className='py-8'>
-                <h3 className='text-lg text-gray-700'>{note}</h3>
+                <h3 className='text-lg text-gray-700 text-justify'>{note}</h3>
             </div>
         </div>
     );

@@ -10,6 +10,8 @@ const Properties = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1300,
@@ -41,7 +43,7 @@ const Properties = () => {
         ],
     };
     return (
-        <div className='w-full bg-[#eae1d3] py-24 px-12 m-auto'>
+        <div className='w-full bg-[#eae1d3] py-12 md:py-24 px-12 m-auto'>
             <div className='md:max-w-[1480px] max-w-[600px] m-auto'>
                 <h1 className='py-3 text-4xl font-bold'>
                     Explore Our{' '}
@@ -52,7 +54,7 @@ const Properties = () => {
                 </p>
                 <Slider
                     {...settings}
-                    className='py-10 '
+                    className='py-10'
                 >
                     {DB.map((property) => {
                         return (

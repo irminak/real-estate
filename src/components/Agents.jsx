@@ -22,7 +22,7 @@ const Agents = () => {
         ],
     };
     return (
-        <div className='w-full bg-[#eae1d3] py-24 px-12 m-auto'>
+        <div className='w-full bg-[#eae1d3] py-12 md:py-24 px-12 m-auto'>
             <div className='md:max-w-[1480px] max-w-[600px] m-auto'>
                 <h1 className='py-3 text-4xl font-bold'>
                     Meet Our <span className='text-[#323E4C]'>Agents</span>
@@ -32,7 +32,7 @@ const Agents = () => {
                 </p>
                 <Slider
                     {...settings}
-                    className='py-10 '
+                    className='py-4 md:py-10 '
                 >
                     {agents.map((agent) => {
                         return (
