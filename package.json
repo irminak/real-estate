@@ -1,6 +1,6 @@
 {
-    "name": "event-agency",
     "homepage": "https://irminak.github.io/real-estate/",
+    "name": "event-agency",
     "private": true,
     "version": "0.0.0",
     "type": "module",
