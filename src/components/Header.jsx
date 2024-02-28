@@ -20,7 +20,7 @@ const Header = () => {
                 </div>
                 <img
                     className='order-1 order-lg-2'
-                    src='/header.png'
+                    src='header.png'
                     alt=''
                 />
             </div>
