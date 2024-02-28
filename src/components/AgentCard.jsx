@@ -19,7 +19,7 @@ const AgentCard = ({ photo, name, phone, email, note }) => {
                 </div>
                 <img
                     className='h-0 sm:h-20'
-                    src='/medal.svg'
+                    src='medal.svg'
                 />
             </div>
 

@@ -63,7 +63,7 @@ const Properties = () => {
                                 name={property.name}
                                 price={property.price}
                                 location={property.city}
-                                img={`/pic${property.id}.jpg`}
+                                img={`pic${property.id}.jpg`}
                                 property={property}
                             />
                         );

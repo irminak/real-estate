@@ -18,13 +18,13 @@ const Mobile = () => {
                     <div className='flex items-center py-6 lg:py-12 justify-start gap-0 md:gap-8 '>
                         <div className='cursor-pointer scale-75'>
                             <img
-                                src='/apple.png'
+                                src='apple.png'
                                 alt=''
                             />
                         </div>
                         <div className='cursor-pointer  scale-75'>
                             <img
-                                src='/google.png'
+                                src='google.png'
                                 alt=''
                             />
                         </div>
@@ -33,7 +33,7 @@ const Mobile = () => {
                 <div className='scale-1'>
                     <img
                         className='m-auto  md:order-last  order-first'
-                        src='/mobile.png'
+                        src='mobile.png'
                         alt=''
                     />
                 </div>

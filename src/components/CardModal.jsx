@@ -27,7 +27,7 @@ const CardModal = forwardRef(function Modal({ agent, property, actions }, ref) {
                 <div className='md:h-[40vh] h-[30vh]'>
                     <img
                         className='object-cover h-[100%] w-[100%] rounded-lg'
-                        src={`/pic${property.id}.jpg`}
+                        src={`pic${property.id}.jpg`}
                         alt=''
                     />
                 </div>
