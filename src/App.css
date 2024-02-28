@@ -37,8 +37,19 @@
     padding-top: 90px;
 }
 .column {
-    padding-right: 200px;
+    padding-right: 0;
 }
+@media (min-width: 768px) {
+    .column {
+        padding-right: 75px;
+    }
+}
+@media (min-width: 1024px) {
+    .column {
+        padding-right: 200px;
+    }
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
