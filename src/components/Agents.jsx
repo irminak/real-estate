@@ -22,17 +22,17 @@ const Agents = () => {
         ],
     };
     return (
-        <div className='w-full bg-[#eae1d3] py-12 md:py-24 px-12 m-auto'>
+        <div className='w-full bg-[#eae1d3] py-12 px-12 md:px-24 m-auto'>
             <div className='md:max-w-[1480px] max-w-[600px] m-auto'>
-                <h1 className='py-3 text-4xl font-bold'>
+                <h1 className='py-3 text-2xl md:text-3xl font-bold'>
                     Meet Our <span className='text-[#323E4C]'>Agents</span>
                 </h1>
-                <p className='text-[#6D737A] py-4'>
+                <p className='text-[#6D737A] py-4 text-basis'>
                     The best specialists from around the world
                 </p>
                 <Slider
                     {...settings}
-                    className='py-4 md:py-10 '
+                    className='py-4  '
                 >
                     {agents.map((agent) => {
                         return (

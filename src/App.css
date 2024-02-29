@@ -22,15 +22,21 @@
 }
 
 .slick-next:before {
-    margin-left: -35px;
+    margin-left: 0;
 }
 .slick-prev:before {
-    margin-left: -35px;
+    margin-left: -10px;
 }
 @media (min-width: 640px) {
     .slick-prev:before,
     .slick-next:before {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .slick-next:before {
+        margin-left: -20px;
+    }
+    .slick-prev:before {
+        margin-left: -30px;
     }
 }
 .section {
@@ -41,12 +47,12 @@
 }
 @media (min-width: 768px) {
     .column {
-        padding-right: 75px;
+        padding-right: 50px;
     }
 }
 @media (min-width: 1024px) {
     .column {
-        padding-right: 200px;
+        padding-right: 90px;
     }
 }
 

@@ -10,14 +10,14 @@ const Navbar = () => {
     const handleClick = () => setToggle((prevStatus) => !prevStatus);
 
     return (
-        <div className='fixed z-10 w-full px-8 h-[80px] bg-white border-b'>
+        <div className='fixed z-10 w-full px-8 h-[60px] bg-white border-b text-sm'>
             <div className='md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex justify-between items-center'>
                 <img
                     src='logo.png'
-                    className='h-[70px]'
+                    className='h-[55px]'
                 />
 
-                <div className='hidden md:flex items-center '>
+                <div className='hidden md:flex items-center'>
                     <ul className='flex gap-4 cursor-pointer'>
                         <li className='hover:text-[#323E4C]'>Home</li>
                         <li className='hover:text-[#323E4C]'>About Us</li>
@@ -38,12 +38,12 @@ const Navbar = () => {
                 >
                     {toggle ? (
                         <AiOutlineClose
-                            size={40}
+                            size={30}
                             color='#323E4C'
                         />
                     ) : (
                         <IoMenu
-                            size={40}
+                            size={30}
                             color='#323E4C'
                         />
                     )}
@@ -58,7 +58,7 @@ const Navbar = () => {
                 }
             >
                 <ul className='cursor-pointer'>
-                    <li className='p-4 pl-8 hover:bg-gray-100'>Home</li>
+                    <li className='p-4 pl-8 hover:bg-gray-100 '>Home</li>
                     <li className='p-4 pl-8 hover:bg-gray-100'>About Us</li>
                     <li className='p-4 pl-8 hover:bg-gray-100'>Properties</li>
                     <li className='p-4 pl-8 hover:bg-gray-100'>Services</li>

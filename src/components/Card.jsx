@@ -5,7 +5,7 @@ import { MdLocationPin } from 'react-icons/md';
 import CardModal from './CardModal';
 import { agents } from '../data/agents';
 
-const Card = ({ property, name, price, location, img }) => {
+const Card = ({ property, name, price, location, img, size }) => {
     const [selectedProperty, setSelectedProperty] = useState([]);
     const [selectedAgent, setSelectedAgent] = useState([]);
     const modal = useRef();
@@ -32,7 +32,7 @@ const Card = ({ property, name, price, location, img }) => {
                 className='text-left'
                 onClick={() => handleOpenModal(property)}
             >
-                <div className='group relative bg-white drop-shadow-md overflow-hidden rounded-2xl my-4 mr-8 '>
+                <div className='group relative bg-white drop-shadow-md overflow-hidden rounded-2xl my-2 mr-0 md:mr-8 '>
                     <div className='overflow-hidden'>
                         <img
                             src={img}
@@ -40,18 +40,18 @@ const Card = ({ property, name, price, location, img }) => {
                         />
                     </div>
                     <div className='p-5 border border-b'>
-                        <h1 className='py-2 truncate text-xl text-[#323E4C] '>
+                        <h1 className='py-2 truncate text-lg text-[#323E4C]'>
                             {name}
                         </h1>
-                        <div className='flex items-center '>
+                        <div className='flex items-center text-sm'>
                             <MdLocationPin
                                 size={20}
                                 color='#323E4C'
                             />
-                            <p className='pl-2 py-4 truncate'>{location}</p>
+                            <p className='pl-2 py-2 truncate'>{location}</p>
                         </div>
                     </div>
-                    <h3 className='p-5 text-xl text-[#323E4C]'>{price}</h3>
+                    <h3 className='p-4 text-lg text-[#323E4C]'>{price}</h3>
                 </div>
             </button>
         </>

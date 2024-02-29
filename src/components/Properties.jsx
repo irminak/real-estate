@@ -8,7 +8,7 @@ const Properties = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -16,7 +16,7 @@ const Properties = () => {
             {
                 breakpoint: 1300,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: false,
                     dots: true,
@@ -32,7 +32,7 @@ const Properties = () => {
                 },
             },
             {
-                breakpoint: 700,
+                breakpoint: 850,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -43,18 +43,18 @@ const Properties = () => {
         ],
     };
     return (
-        <div className='w-full bg-[#eae1d3] py-12 md:py-24 px-12 m-auto'>
+        <div className='w-full bg-[#eae1d3] py-12 md:py-16 px-12 md:px-24 m-auto'>
             <div className='md:max-w-[1480px] max-w-[600px] m-auto'>
-                <h1 className='py-3 text-4xl font-bold'>
+                <h1 className='py-3 text-2xl md:text-3xl font-bold'>
                     Explore Our{' '}
                     <span className='text-[#323E4C]'>Properties</span>
                 </h1>
-                <p className='text-[#6D737A] py-4'>
+                <p className='text-[#6D737A] py-4 text-basis'>
                     Choose from locations around the world
                 </p>
                 <Slider
                     {...settings}
-                    className='py-10'
+                    className='py-6 text-center'
                 >
                     {DB.map((property) => {
                         return (
@@ -65,6 +65,7 @@ const Properties = () => {
                                 location={property.city}
                                 img={`pic${property.id}.jpg`}
                                 property={property}
+                                size={property.size}
                             />
                         );
                     })}

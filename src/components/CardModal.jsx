@@ -32,44 +32,44 @@ const CardModal = forwardRef(function Modal({ agent, property, actions }, ref) {
                     />
                 </div>
                 <div className='px-4 '>
-                    <h1 className='py-8 md:text-3xl text-2xl text-[#323E4C] border-b '>
+                    <h1 className='py-4 md:text-2xl text-xl text-[#323E4C] border-b '>
                         {property.name}
                     </h1>
-                    <div className='flex items-center md:py-4 py-2 '>
+                    <div className='flex items-center py-2 '>
                         <MdLocationPin
-                            size={20}
+                            size={16}
                             color='#323E4C'
                         />
-                        <p className='pl-2 py-4 text-lg'>{property.city}</p>
+                        <p className='pl-2 py-2 text-sm'>{property.city}</p>
                     </div>
 
-                    <p className='text-lg text-justify'>
+                    <p className='text-sm text-justify'>
                         {property.description}
                     </p>
-                    <p className='text-lg text-justify   '>{property.size}</p>
-                    <p className='text-lg text-justify'>{property.flaws}</p>
-                    <div className='flex  justify-start gap-8 py-2'>
+                    <p className='text-sm text-justify   '>{property.size}</p>
+                    <p className='text-sm text-justify'>{property.flaws}</p>
+                    <div className='flex  justify-start gap-8 py-0'>
                         <div className='flex items-center '>
                             <IoIosBed
-                                size={30}
+                                size={20}
                                 color='#323E4C'
                             />
-                            <p className='pl-2 py-4 text-3xl text-[#323E4C]'>
+                            <p className='pl-2 py-4 text-2xl text-[#323E4C]'>
                                 {property.rooms}
                             </p>
                         </div>
                         <div className='flex items-center '>
                             <FaBath
-                                size={30}
+                                size={20}
                                 color='#323E4C'
                             />
-                            <p className='pl-2 py-4 text-3xl text-[#323E4C]'>
+                            <p className='pl-2 py-4 text-2xl text-[#323E4C]'>
                                 {property.bathrooms}
                             </p>
                         </div>
                     </div>
                     <div className='absolute md:right-8 md:top-8 right-4 top-4 rounded-xl border bg-white'>
-                        <h3 className=' text-[#323E4C] rounded-xl p-4 shadow-lg md:text-2xl text-xl font-semibold'>
+                        <h3 className=' text-[#323E4C] rounded-xl p-3 shadow-lg md:text-lg text-basis font-semibold'>
                             {property.price}
                         </h3>
                     </div>
@@ -81,28 +81,28 @@ const CardModal = forwardRef(function Modal({ agent, property, actions }, ref) {
                                 className='xl:absolute flex right-8 bottom-4 xl:mb-0 mb-4 '
                             >
                                 <img
-                                    className='w-20 h-20 rounded-full'
+                                    className='w-16 h-16 rounded-full'
                                     src={agentInfo.photo}
                                     alt=''
                                 />
                                 <div className='flex flex-col justify-center items-start pl-4'>
-                                    <h3 className='text-xl text-[#323E4C] font-semibold'>
+                                    <h3 className='text-basis text-[#323E4C] font-semibold'>
                                         {agentInfo.name}
                                     </h3>
-                                    <p className='text-lg '>
+                                    <p className='text-masis '>
                                         {agentInfo.phoneNumber}
                                     </p>
                                 </div>
                             </div>
                         ))}
                         <form
-                            className='px-8 py-3 xl:flex inline-block items-center rounded-md bg-white text-[#323E4C] border-2 border-[#323E4C] font-bold '
+                            className='px-8 py-2 xl:flex inline-block items-center rounded-md bg-white hover:bg-[#323E4C] text-[#323E4C] hover:text-white duration-300 border border-[#323E4C] font-semibold text-sm cursor-pointer'
                             method='dialog'
                             id='modal-actions'
                         >
                             {actions}
                         </form>
-                        <button className='px-8 py-3 flex my-4 xl:my-0 items-center rounded-md bg-[#323E4C] text-white font-bold'>
+                        <button className='px-8 py-2 flex my-4 xl:my-0 items-center rounded-md bg-[#323E4C] hover:bg-[#323E4Ccc] duration-300 text-white font-semibold text-sm'>
                             <FaPhone /> <span className='pl-2'>Call Agent</span>
                         </button>
                     </div>
